@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -17,5 +20,20 @@ h1{
 }
 
 .nav-link{
-    padding-right: 2rem !important;   
+    padding-right: 1rem !important;   
+    padding-left: 1rem !important;   
+    transition: 300ms;
+    transition: all 0.3s ease-in;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    font-family: 'Roboto', sans-serif;
 }
+
+.nav-link:hover{
+    text-decoration-color:greenyellow;
+    color: greenyellow!important;
+}
+
+ 
