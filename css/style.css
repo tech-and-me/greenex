@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* display: block; */
 }
 
 body{
@@ -27,7 +28,7 @@ h1{
 
 .nav-link{
     padding-right: 1rem !important;   
-    padding-left: 1rem !important;   
+    padding-left: 0.5rem !important;   
     transition: 300ms;
     transition: all 0.3s ease-in;
     text-decoration: underline;
@@ -38,23 +39,46 @@ h1{
 }
 
 .nav-link:hover{
-    text-decoration-color:greenyellow;
-    color: greenyellow!important;
+    text-decoration-color:rgb(244, 245, 242);
+    color: rgb(255, 255, 255)!important;
+}
+
+.nav-item > a{
+    font-weight:300
+}
+
+
+img{
+    width: 4%;
+    min-width: 50px;
+}
+
+.hero-container{
+    margin-top: 6rem;
+}
+
+
+.bg-green{
+    background-color:rgb(52, 146, 52);
+}
+
+.text-green{
+    color: rgb(123, 240, 123) !important;
+}
+
+.hero-header *{
+    font-size: 4rem;
 }
 
 footer{
-    position: fixed;
-    bottom: 10px;
-    height: 70px;
+    position: absolute;
     text-align: end;
     right: 15%;
+    /* bottom:10px; */
+    
 }
 
 .footer-logos > i {
     margin-left: 10px;
     margin-bottom: 5px;
-}
-
-img{
-    width: 4%;
 }
