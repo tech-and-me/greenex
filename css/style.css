@@ -33,7 +33,7 @@ i{
     /* background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 50%; */ */
+    background-position: 50% 50%; 
     z-index:5!important ;
 
 }
@@ -396,8 +396,8 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: auto;
     /* padding: 0.8rem 1rem; */
     line-height:40px ;
     font-size: 1.2rem;
@@ -539,19 +539,31 @@ footer{
 
 }
 
+@media screen and (min-width:1031px) and (max-width:1400px){
+    .GreenexTokenomics div p{
+        font-size: 1rem;
+    }
 
-@media screen and (min-width:768px) and (max-width:1025px){
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1030px){
     .tokenomics-wrapper div{
         flex-direction: column;
     }
 
     .tokenomics-wrapper{
-        width:90%;
+        width:95%;
+    }
+
+    .GreenexTokenomics div p{
+        font-size: 1rem;
     }
 
     .buy-header button a {
         padding:0.2rem;
-        font-size: 0.9rem;
+        font-size: 1.3rem;
     }
 
 }
@@ -594,10 +606,12 @@ footer{
         flex-direction: column;
     }
 
-    .tokenomics-wrapper{
-        width:90%;
+    .GreenexTokenomics div p{
+        font-size: 1.1rem;
     }
 
-  
+    .tokenomics-wrapper{
+        width:95%;
+    }
 
 }
