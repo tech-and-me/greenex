@@ -558,10 +558,22 @@ footer{
 
 .footer-left h5{
     font-weight: 350;
+    
 }
 
-.fab{
-    font-size: 30px!important;
+.footer-right{
+    max-width: 45%;
+    text-align: right;
+}
+
+.footer-left{
+    max-width: 45%;
+    text-align: left;
+}
+
+
+.footer-right .fab{
+    font-size: 35px!important;
     padding-left:1px;
 }
 
@@ -640,10 +652,10 @@ footer{
 
     }
 
-    .fab{
+    /* .footer-right .fab{
         font-size: 25px!important;
         padding-left:1px;
-    }
+    } */
 
 }
 
@@ -660,10 +672,10 @@ footer{
         font-size: 1rem;
     }
 
-    .fab{
+    /* .fab{
         font-size: 25px!important;
         padding-left:1px;
-    }
+    } */
 }
 
 
@@ -698,8 +710,8 @@ footer{
         font-size: 0.8rem;
     }
 
-    .fab{
-        font-size: 20px!important;
+    .footer-right .fab{
+        font-size: 30px!important;
         padding-left:1px;
     }
 
@@ -781,12 +793,12 @@ footer{
     }
 
     footer div h5, footer div p{
-        font-size: 0.55rem;
+        font-size: 0.6rem;
     }
 
 
     .fab{
-        font-size: 15px!important;
+        font-size: 30px!important;
         padding-left:0.5px;
     }
 
