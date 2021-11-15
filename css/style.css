@@ -109,6 +109,17 @@ img{
 
 
 /************************************* Roadmap*************************************/
+.timeline{
+    width:100%;
+    height: auto;
+    max-width: 1000px;
+    margin:3rem auto;
+    position: relative;
+    /* background-color: red !important; */
+    padding: 2rem;
+}
+
+
 .roadmap-title{
     margin:2rem auto;
     outline-style: solid;
@@ -130,17 +141,12 @@ img{
     
 }
 
-.timeline{
-    width:100%;
-    height: auto;
-    max-width: 900px;
-    margin:3rem auto;
-    position: relative;
-}
+
 
 .timeline ul{
     list-style: none;
     padding: 0 !important;
+    
  
     
 }
@@ -231,10 +237,10 @@ img{
     color: green;
 }
 
-.greenpaper-container div p{
+#greenpaper-content{
     /* top: 50%; */
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     width: 100%;
     padding: 2rem;
     /* opacity: 0.9; */
@@ -574,6 +580,7 @@ footer{
     }
 
     .timeline ul li:nth-child(odd){
+        
         float:left;
         clear:right;
         transform:translateX(-30px);
@@ -662,6 +669,10 @@ footer{
 
 
 @media screen and (min-width:768px) and (max-width:1030px){
+    #greenpaper-content{
+        font-size: 1.3rem;
+    }
+
     .tokenomics-wrapper div{
         flex-direction: column;
     }
@@ -708,8 +719,8 @@ footer{
     }
 
     .hero-text p{
-        font-size: 1.2rem;
-        padding-right:4rem;
+        font-size: 1.3rem;
+        padding-right:2rem;
     }
 
     .hero-text span{
@@ -739,7 +750,10 @@ footer{
 
     .greenpaper-container div{
         max-width: 90%;
-        font-size: 1.25rem;
+    }
+
+    #greenpaper-content{
+        font-size: 1.3rem;
     }
 
     .wrapper p{
