@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     
+    
     /* display: block; */
 }
 
@@ -124,11 +125,12 @@ img{
     /* background-color:rgb(0, 0, 0)!important; */
     background-image: url(../img/bg/bg11.jpg);
     background-size: cover;
+    padding:0.3rem;
     
 }
 
 .timeline{
-    width:80%;
+    width:100%;
     height: auto;
     max-width: 900px;
     margin:3rem auto;
@@ -138,6 +140,7 @@ img{
 .timeline ul{
     list-style: none;
     padding: 0 !important;
+ 
     
 }
 
@@ -195,10 +198,6 @@ img{
     z-index:10;
     /* position:relative; */
 }
-
-
-
-
 
 
 .greenpaper-container div{
@@ -273,8 +272,8 @@ img{
 }
 
 .marketplace div{
-    width: 60%;
-    max-height: 300px;
+    width: 70%;
+    max-height: 500px;
     background-color: rgb(15, 15, 17);
     display: flex;
     flex-direction: column;
@@ -704,15 +703,20 @@ footer{
     }
 
     .hero-header h1{
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 
     .hero-text p{
+        font-size: 1.2rem;
+        padding-right:4rem;
+    }
+
+    .hero-text span{
         font-size: 1rem;
-        padding-right:8rem;
     }
 
 
+    /* Timeline */
 
     .timeline ul li h3{
         font-size: 15px;
@@ -725,12 +729,16 @@ footer{
         font-size: 0.8rem;
     }
 
-    .hero-text span{
-        font-size: 0.8rem;
-    }
-
+    
     .team-title h1 , .wrapper h1{
         font-size: 1.5rem!important;
+    }
+
+
+
+    .greenpaper-container div{
+        max-width: 90%;
+        font-size: 1.1rem;
     }
 
     .wrapper p{
@@ -750,6 +758,9 @@ footer{
         width:95%;
     }
 
+
+
+    /* Footer */
     footer{
         padding: 0.5rem 1rem;
     }
