@@ -5,23 +5,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
     /* display: block; */
 }
 
 body{
     background-color: rgb(15, 14, 14);
     color: whitesmoke;
-    position:relative;
+    position:absolute;
+    z-index: 900;
 
 }
 
+i{
+    color:white!important;
+    margin:6px;
+}
+
+
 #particles-js{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     position: fixed;
     left: 0;
     top: 10;
-    z-index:10 ;
+    bottom:20 !important;
+    /* background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; */ */
+    z-index:5!important ;
 
 }
 
@@ -35,19 +48,22 @@ h1{
 
 .nav-link{
     padding-right: 1rem !important;   
-    padding-left: 0.5rem !important;   
+    padding-left: 1rem !important;   
     transition: 300ms;
     transition: all 0.3s ease-in;
-    text-decoration: underline;
+    /* text-decoration: underline;
     text-decoration-color: transparent;
     text-decoration-thickness: 2px;
-    text-underline-offset: 6px;
+    text-underline-offset: 6px; */
     font-family: 'Roboto', sans-serif;
+    text-align: cente;
 }
 
 .nav-link:hover{
     text-decoration-color:rgb(244, 245, 242);
     color: rgb(255, 255, 255)!important;
+    outline-color: white;
+    outline-style: solid;
 }
 
 .nav-item > a{
@@ -56,14 +72,15 @@ h1{
 
 
 img{
-    width: 5%;
+    width: 4%;
     min-width: 50px;
 }
 
 .hero-container{
-    margin-top: 3rem;
+    margin:3rem auto;
+    z-index:50;
+    position:relative;
 }
-
 
 .bg-green{
     background-color:rgb(52, 146, 52);
@@ -75,10 +92,171 @@ img{
 
 .hero-header *{
     font-size: 3rem;
+    z-index:16;
+} 
+
+.hero-container a {
+    text-decoration: none;
+    color:green;
+    background-color: white;
+    padding:0.6rem 1.3rem;
+    border-radius: 5px;
+    font-weight: bolder;
+
 }
 
 
-.card-img-top{
+/************************************* Roadmap*************************************/
+.roadmap-title{
+    margin:2rem auto;
+    outline-style: solid;
+    padding:0.8rem 1.5rem;
+    outline-width: 1px;
+}
+
+.timeline-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color:rgb(0, 0, 0)!important; */
+    background-image: url(/img/bg/bg11.jpg);
+    background-size: cover;
+    
+}
+
+.timeline{
+    width:80%;
+    height: auto;
+    max-width: 900px;
+    margin:3rem auto;
+    position: relative;
+}
+
+.timeline ul{
+    list-style: none;
+    padding: 0 !important;
+    
+}
+
+.timeline ul li{
+    padding: 20px;
+    background-color:rgb(34, 33, 33);
+    /* color: black; */
+    margin-bottom: 20px;
+    height: 11rem;
+    border-radius: 10px;
+    
+    
+}
+
+
+.timeline ul li:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-content h3{
+    font-size:1.2rem;
+    font-weight:400;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.timeline-content p{
+    font-size : 16px;
+    line-height:30px;
+    font-weight:300;
+}
+
+.timeline-container .date{
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    
+}
+
+
+/************************************* Greenpaper *************************************/
+.greenpaper-container{
+    width: 100%;
+    min-height: 50rem;
+    /* background-image: url(/img/bg30.jpg); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url(/img/bg/bg36.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:10;
+    position:relative;
+}
+
+
+
+
+
+
+.greenpaper-container div , .GreenexTokenomics div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%;
+    height: 80%;
+    padding: 0.8rem 1.5rem;
+    line-height:40px ;
+    font-size: 1.2rem;
+    outline-width: 2px;
+    outline-color:black;
+    outline-style: solid;
+    background-color: rgb(37, 37, 37);
+    z-index:5!important;
+    position:relative;
+
+    /* overflow: hidden; */
+
+}
+
+.greenpaper-container div h1, .GreenexTokenomics div h1 {
+    border:3px;
+    outline-style: solid;
+    padding:1rem;
+    outline-color:white;
+    outline-width: 1px;
+    color: green;
+}
+
+.greenpaper-container div p,  .GreenexTokenomics div p{
+    /* top: 50%; */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    /* opacity: 0.9; */
+    color:white;
+    margin-bottom: 2rem!important;
+    text-align:left;
+    /* text-justify: inter-character!important; */
+    
+
+}
+
+.greenpaper-container button a , .buy-header button a {
+    text-decoration: none;
+    /* color:white; */
+    font-weight: bolder;
+    padding:0.6rem;
+    color:green;
+    z-index:890;
+}
+
+
+/************************************* Team *************************************/
+.team .card-img-top{
     border-radius: 50%!important;
     width: 50%;
     margin-top: -1.5rem;
@@ -89,10 +267,14 @@ img{
     margin-top: 4rem;
 }
 
-.card{
-    background-color: rgb(29, 26, 29)!important;
-    background-image: linear-gradient(to bottom, rgba(20, 20, 19, 0.527), rgba(10, 121, 34, 0.164))!important;
-    z-index:10;
+.team .card{
+    background-color: rgb(49, 54, 49)!important;
+    /* background-image: linear-gradient(to bottom, rgba(143, 194, 155, 0.945),rgba(92, 212, 88, 0.164))!important; */
+
+    color:white;
+    /* z-index:10; */
+
+   
 }
 
 .card-title{
@@ -102,14 +284,151 @@ img{
 .card-text{
     font-size: 0.8rem;
 }
-/* 
-.team{
-    background-color: rgb(45, 48, 43);
-} */
 
-.team-header h1{
-    font-size: 3rem !important;
+.team-title{
+    /* font-size: 2.5rem !important;
+    outline-width: 2px;
+    outline-color: white;
+    outline-style: solid; */
+    width:100%;
+    align-content: center;
+    text-align: center;
+    
 }
+
+.team-title h1, .inner-wrapper h1,  .buy-header div h1{
+    font-size: 2.5rem !important;
+    outline-width: 2px;
+    outline-color: white;
+    outline-style: solid;
+    min-width:15%;
+    max-width: 470px;
+    padding:0.8rem 1.5rem !important;
+    position: ralative;
+    transform: translateX(-50%);
+    margin-left:50%;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Partner */
+.inner-wrapper{
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(205, 235, 212);
+    background-image: url(/img/bg/bg1.jfif);
+    padding: 2rem;
+
+}
+
+.inner-wrapper img{
+    text-align: center!important;
+    align-items: center!important;
+    justify-content: center!important;
+    /* margin-right:50%; */
+}
+
+.partner{
+    text-align: center!important;
+    justify-content: center;
+    background-color: rgb(1, 12, 22) !important;
+    min-width:130px;
+    height: 140px;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    margin-left:50%;
+}
+
+.partner img{
+    text-align: center !important;
+    width: 60%;
+
+  
+}
+
+/* Buy */
+
+.buy-header img{
+    width:50%;
+    border-radius: 50%;
+}
+
+/* GreenexTokenomics */
+
+
+.GreenexTokenomics{
+    width: 100%;
+    min-height: 50rem;
+    /* background-image: url(/img/bg30.jpg); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url(/img/bg/bg2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:10;
+    position:relative;
+    /* padding: 3rem; */
+}
+
+.GreenexTokenomics .wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    height: 80%;
+    padding: 0.8rem 1.5rem;
+    line-height:40px ;
+    font-size: 1.2rem;
+    background-color: rgb(37, 37, 37);
+    z-index:5!important;
+    position:relative;
+
+
+}
+
+
+.GreenexTokenomics img{
+    width: 100%!important;
+    min-width: 400px;
+}
+
+.GreenexTokenomics .wrapper div{
+    outline-style: none ;
+}
+
+
+.GreenexTokenomics div h1 {
+    border:3px;
+    outline-style: solid;
+    padding:1rem;
+    outline-color:green;
+    outline-width: 2px;
+    color: white;
+    
+}
+
+.GreenexTokenomics div p{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    color:white;
+    margin-bottom: 1rem!important;
+    text-align:left;
+
+    
+
+}
+
+
+
+
+
 
 footer{
     position: absolute;
@@ -125,3 +444,125 @@ footer{
 }
 
 
+
+
+/************************************* Media Query*************************************/
+
+@media screen and (min-width:768px){
+    .timeline ul li{
+        width: 50%;
+        margin-bottom: 50px;
+        position:relative;
+    }
+
+    .timeline ul li:nth-child(odd){
+        float:left;
+        clear:right;
+        transform:translateX(-30px);
+        border-radius:10px 0 10px 10px ;
+    }
+
+    .timeline ul li:nth-child(even){
+        float:right;
+        clear:left;
+        transform:translateX(30px);
+        border-radius:0 10px 10px 10px ;
+        
+    }
+
+    .timeline::before{
+        content: "";
+        position:absolute;
+        height: 100%;
+        width: 2px;
+        background-color:rgb(85, 97, 85);
+        left:50%;
+        transform:translateX(-50%);
+        
+    }
+
+    .timeline ul li::after{
+        content: "";
+        position:absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        
+        background-color:rgb(20, 173, 20);
+        top:0;
+        /* transform: translateX(50%,-50%); */
+    }
+
+    .timeline ul li:nth-child(odd)::after{
+        right:-40px;
+        transform: translateX(-50%,-50%);
+        
+    }
+
+    .timeline ul li:nth-child(even)::after{
+        left:-40px;
+        transform: translateX(-50%,50%);
+    }
+
+    .timeline ul li:hover:after{
+        background-color: rgb(244, 245, 242);
+    }
+
+    .timeline-content .date{
+        position:absolute;
+        top:-30px;
+        color:white;
+
+    }
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .GreenexTokenomics .wrapper{
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 780px){
+    .hero-header, .hero-text{
+        padding: 1rem;
+        
+    }
+
+    .timeline ul li h3{
+        font-size: 15px;
+    }
+    .timeline-content .date{
+        font-size: 0.6rem;
+    }
+
+    .timeline ul li span{
+        font-size: 0.8rem;
+    }
+
+    .hero-text span{
+        font-size: 0.8rem;
+    }
+
+    .team-title h1 , .wrapper h1{
+        font-size: 1.5rem!important;
+    }
+
+    .wrapper p{
+        font-size: 0.9rem;
+        padding:1rem!important;
+    }
+
+    .GreenexTokenomics .wrapper{
+        flex-direction: column;
+    }
+
+
+
+}
