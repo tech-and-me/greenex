@@ -274,6 +274,7 @@ img{
 .marketplace div{
     width: 70%;
     max-height: 500px;
+    min-width: 320px;
     background-color: rgb(15, 15, 17);
     display: flex;
     flex-direction: column;
@@ -288,14 +289,13 @@ img{
 }
 
 
-
-.marketplace button{
+.marketplace div button{
     max-width: 150px;
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
     margin-top:15px;
     margin-left: 50%;
     transform: translateX(-50%);
-    color:green;
+    color:rgb(58, 155, 20);
     font-weight: 600;
     padding:0.5rem 1rem;
 }
@@ -467,7 +467,7 @@ img{
 
 .GreenexTokenomics img{
     width: 80%;
-    min-width: 320px;
+    min-width: 230px;
 }
 
 .GreenexTokenomics div h1 {
@@ -490,6 +490,7 @@ img{
     padding: 1rem;
     color:white;
     text-align:left;
+    line-height: 50px;
 }
 
 
@@ -653,7 +654,7 @@ footer{
     }
 
     .GreenexTokenomics div p{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
 
@@ -664,6 +665,10 @@ footer{
 
     .marketplace div h3{
         font-size: 1.2rem;
+    }
+
+    .marketplace button{
+        font-size: 0.6rem;
     }
 
     footer{
@@ -696,13 +701,18 @@ footer{
     }
 
     .GreenexTokenomics div p{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .buy-header button a {
         padding:0.2rem;
         font-size: 1.3rem;
     }
+
+    .inner-wrapper h1{
+        font-size: 1.6rem !important;
+    }
+    
 
     .timeline ul li{
         height: 12rem;
@@ -713,6 +723,13 @@ footer{
         padding: 1rem;
     }
 
+    .marketplace div p{
+        font-size: 1.5rem;
+    }
+
+    .marketplace button{
+        font-size: 0.6rem!important;
+    }
 
     footer{
         padding: 0.5rem 1rem;
@@ -777,6 +794,10 @@ footer{
         width:90%!important;
         padding: 1rem;
     }
+    
+    .marketplace button{
+        font-size: 0.6rem!important;
+    }
 
     .marketplace div h3{
         font-size: 1.2rem;
@@ -809,6 +830,7 @@ footer{
 
     .GreenexTokenomics div p{
         font-size: 1.15rem;
+        
     }
 
     .tokenomics-wrapper{
@@ -817,8 +839,7 @@ footer{
 
 
     .inner-wrapper h1{
-        font-size: 1.8rem !important;
-        
+        font-size: 1.6rem !important;
     }
     
     .partner {
