@@ -142,14 +142,9 @@ img{
     
 }
 
-
-
 .timeline ul{
     list-style: none;
     padding: 0 !important;
-    
- 
-    
 }
 
 .timeline ul li{
@@ -159,8 +154,6 @@ img{
     margin-bottom: 20px;
     height: 11rem;
     border-radius: 10px;
-    
-    
 }
 
 
@@ -186,7 +179,6 @@ img{
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 2px;
-    
 }
 
 
@@ -291,7 +283,7 @@ img{
 }
 
 .marketplace div h3{
-    padding: 1rem 0;
+    padding: 1rem;
     color: greenyellow;
 }
 
@@ -357,8 +349,10 @@ img{
     outline-width: 1px;
     outline-color: white;
     outline-style: solid;
-    min-width:15%;
-    max-width: 470px;
+    width:70%;
+    max-width:350px;
+    /* max-width:300px;
+    max-width: 500px; */
     padding:0.8rem 1.5rem !important;
     position: ralative;
     transform: translateX(-50%);
@@ -398,9 +392,7 @@ img{
 
 .partner img{
     text-align: center !important;
-    width: 60%;
-
-  
+    width: 60%;  
 }
 
 /* Buy */
@@ -421,11 +413,7 @@ img{
 
 }
 
-
-
-
 /* GreenexTokenomics */
-
 
 .GreenexTokenomics{
     width: 100%;
@@ -441,10 +429,8 @@ img{
     background-size: cover;
     /* z-index:10; */
     /* position:relative; */
-    padding: 3rem;
+    padding: 2rem 1rem;
 }
-
-
 
 .tokenomics-wrapper{
     display: flex;
@@ -481,7 +467,7 @@ img{
 
 .GreenexTokenomics img{
     width: 80%;
-    min-width: 380px;
+    min-width: 320px;
 }
 
 .GreenexTokenomics div h1 {
@@ -574,7 +560,7 @@ footer{
 
 
 .footer-right .fab{
-    font-size: 35px!important;
+    font-size: 35px;
     padding-left:1px;
 }
 
@@ -661,8 +647,23 @@ footer{
 }
 
 @media screen and (min-width:1031px) and (max-width:1400px){
+
+    .timeline ul li{
+        height: 12rem;
+    }
+
     .GreenexTokenomics div p{
         font-size: 1rem;
+    }
+
+
+    .marketplace div{
+        width:90%!important;
+        padding: 1rem;
+    }
+
+    .marketplace div h3{
+        font-size: 1.2rem;
     }
 
     footer{
@@ -703,6 +704,16 @@ footer{
         font-size: 1.3rem;
     }
 
+    .timeline ul li{
+        height: 12rem;
+    }
+
+    .marketplace div{
+        width:90%!important;
+        padding: 1rem;
+    }
+
+
     footer{
         padding: 0.5rem 1rem;
     }
@@ -712,7 +723,7 @@ footer{
     }
 
     .footer-right .fab{
-        font-size: 30px!important;
+        font-size: 20px;
         padding-left:1px;
     }
 
@@ -743,22 +754,33 @@ footer{
 
     /* Timeline */
 
+    .timeline ul li{
+        height: 12rem;
+    }
+
     .timeline ul li h3{
-        font-size: 15px;
+        font-size: 18px;
     }
     .timeline-content .date{
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     .timeline ul li span{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
-
     
     .team-title h1 , .wrapper h1{
         font-size: 1.5rem!important;
     }
 
+    .marketplace div{
+        width:90%!important;
+        padding: 1rem;
+    }
+
+    .marketplace div h3{
+        font-size: 1.2rem;
+    }
 
 
     .greenpaper-container div{
@@ -768,6 +790,13 @@ footer{
     #greenpaper-content{
         font-size: 1.3rem;
     }
+
+
+    .buy-header div h1{
+        font-size: 1.3rem!important;
+    }
+
+
 
     .wrapper p{
         font-size: 0.9rem;
@@ -787,6 +816,16 @@ footer{
     }
 
 
+    .inner-wrapper h1{
+        font-size: 1.8rem !important;
+        
+    }
+    
+    .partner {
+        min-width:80%;
+        height: 180px;
+    }
+
 
     /* Footer */
     footer{
@@ -799,10 +838,9 @@ footer{
     }
 
 
-    .fab{
+    .footer-right .fab{
         font-size: 30px!important;
-        padding-left:0.5px;
+        padding-right:0.5px;
         line-height: 60px;
     }
-
 }
