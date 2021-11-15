@@ -200,7 +200,7 @@ img{
 
 
 
-.greenpaper-container div , .GreenexTokenomics div{
+.greenpaper-container div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,7 +210,7 @@ img{
     padding: 0.8rem 1.5rem;
     line-height:40px ;
     font-size: 1.2rem;
-    outline-width: 2px;
+    outline-width: 1px;
     outline-color:black;
     outline-style: solid;
     background-color: rgb(37, 37, 37);
@@ -221,16 +221,16 @@ img{
 
 }
 
-.greenpaper-container div h1, .GreenexTokenomics div h1 {
+.greenpaper-container div h1{
     border:3px;
     outline-style: solid;
-    padding:1rem;
+    padding:0.8rem 1.5rem;
     outline-color:white;
     outline-width: 1px;
     color: green;
 }
 
-.greenpaper-container div p,  .GreenexTokenomics div p{
+.greenpaper-container div p{
     /* top: 50%; */
     align-items: center;
     justify-content: center;
@@ -245,7 +245,7 @@ img{
 
 }
 
-.greenpaper-container button a , .buy-header button a {
+.greenpaper-container button a{
     text-decoration: none;
     /* color:white; */
     font-weight: bolder;
@@ -298,7 +298,7 @@ img{
 
 .team-title h1, .inner-wrapper h1,  .buy-header div h1{
     font-size: 2.5rem !important;
-    outline-width: 2px;
+    outline-width: 1px;
     outline-color: white;
     outline-style: solid;
     min-width:15%;
@@ -316,7 +316,7 @@ img{
     width: 100%;
     margin-left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(205, 235, 212);
+    /* background-color: rgb(205, 235, 212); */
     background-image: url(/img/bg/bg1.jfif);
     padding: 2rem;
 
@@ -354,6 +354,20 @@ img{
     border-radius: 50%;
 }
 
+
+.buy-header button a {
+    text-decoration: none;
+    /* color:white; */
+    font-weight: bolder;
+    padding:0.6rem;
+    color:green;
+    z-index:890;
+
+}
+
+
+
+
 /* GreenexTokenomics */
 
 
@@ -371,43 +385,57 @@ img{
     background-size: cover;
     z-index:10;
     position:relative;
-    /* padding: 3rem; */
+    padding: 3rem;
 }
 
-.GreenexTokenomics .wrapper{
+
+
+.tokenomics-wrapper{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 80%;
+    width: 80%;
     height: 80%;
-    padding: 0.8rem 1.5rem;
+    /* padding: 0.8rem 1rem; */
     line-height:40px ;
     font-size: 1.2rem;
     background-color: rgb(37, 37, 37);
     z-index:5!important;
     position:relative;
+    padding: 2.5rem;
+    margin: 0;
+}
 
+.tokenomics-wrapper div{
+    outline-style: none;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    margin: 0;
+}
 
+.tokenomics-body div{
+    outline-style: none ;
 }
 
 
 .GreenexTokenomics img{
-    width: 100%!important;
+    width: 90%;
     min-width: 400px;
 }
-
-.GreenexTokenomics .wrapper div{
-    outline-style: none ;
-}
-
 
 .GreenexTokenomics div h1 {
     border:3px;
     outline-style: solid;
     padding:1rem;
-    outline-color:green;
-    outline-width: 2px;
+    outline-color:white;
+    outline-width: 1px;
     color: white;
     
 }
@@ -418,16 +446,9 @@ img{
     width: 100%;
     padding: 1rem;
     color:white;
-    margin-bottom: 1rem!important;
-    text-align:left;
-
     
-
+    text-align:left;
 }
-
-
-
-
 
 
 footer{
@@ -518,9 +539,18 @@ footer{
 }
 
 
-@media screen and (min-width:768px) and (max-width:1023px){
-    .GreenexTokenomics .wrapper{
+@media screen and (min-width:768px) and (max-width:1025px){
+    .tokenomics-wrapper div{
         flex-direction: column;
+    }
+
+    .tokenomics-wrapper{
+        width:90%;
+    }
+
+    .buy-header button a {
+        padding:0.2rem;
+        font-size: 0.9rem;
     }
 
 }
@@ -559,10 +589,14 @@ footer{
         padding:1rem!important;
     }
 
-    .GreenexTokenomics .wrapper{
+    .tokenomics-wrapper div{
         flex-direction: column;
     }
 
+    .tokenomics-wrapper{
+        width:90%;
+    }
 
+  
 
 }
