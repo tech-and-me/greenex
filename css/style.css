@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
     /* overflow-x: hidden; */
     
     
@@ -736,7 +737,7 @@ footer{
     }
 
     .hero-text span{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
 
@@ -793,13 +794,15 @@ footer{
     }
 
     footer div h5, footer div p{
-        font-size: 0.6rem;
+        font-size: 1.2rem;
+        line-height: 40px;
     }
 
 
     .fab{
         font-size: 30px!important;
         padding-left:0.5px;
+        line-height: 60px;
     }
 
 }
