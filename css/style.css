@@ -40,7 +40,7 @@ i{
 
 
 
-/* nav bar */
+/***************************nav bar *******************************/
 
 .navbar{
     background-color:rgb(29, 26, 29)!important;
@@ -51,10 +51,6 @@ i{
     padding-left: 1rem !important;   
     transition: 300ms;
     transition: all 0.3s ease-in;
-    /* text-decoration: underline;
-    text-decoration-color: transparent;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 6px; */
     font-family: 'Roboto', sans-serif;
     text-align: cente;
 }
@@ -76,6 +72,7 @@ img{
     min-width: 50px;
 }
 
+/*********************************** Hero header **********************************/
 .hero-container{
     margin:3rem auto;
     z-index:50;
@@ -90,8 +87,10 @@ img{
     color:lime !important;
 }
 
-.hero-header *{
+.hero-header{
     font-size: 3rem;
+    position: relative;
+    min-height: 300px;
     z-index:16;
 } 
 
@@ -111,7 +110,7 @@ img{
     color: green;
 }
 
-/* Back to top */
+/************************************ Back to top ************************************/
 
 .back-home{
     width: 100%;
@@ -257,8 +256,6 @@ img{
     background-color: rgb(37, 37, 37);
     z-index:5!important;
     position:relative;
-
-    /* overflow: hidden; */
 
 }
 
@@ -885,11 +882,11 @@ footer{
     }
 
     .hero-header h1{
-        font-size: 1.9rem;
+        font-size: 1.75rem;
     }
 
     .hero-text p{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         padding-right:2rem;
     }
 

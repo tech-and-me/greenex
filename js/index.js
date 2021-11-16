@@ -10,14 +10,14 @@ function type(){
     if (i < text.length){
         textDiv.innerHTML += text.charAt(i);
         i++;
-        t=setTimeout(type, 200);
+        t=setTimeout(type, 120);
     } else if (j < text2.length){
         textDiv2.innerHTML += text2.charAt(j);
         j++;
-        t=setTimeout(type, 200);
+        t=setTimeout(type, 120);
     }
     if (j===text2.length){
-        t=setTimeout(clear,4000);
+        t=setTimeout(clear,3000);
         
     }
     
