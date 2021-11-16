@@ -82,7 +82,7 @@ img{
 }
 
 .text-green{
-    color: rgb(123, 240, 123) !important;
+    color:lime !important;
 }
 
 .hero-header *{
@@ -217,10 +217,10 @@ img{
 .greenpaper-container div h1{
     border:3px;
     outline-style: solid;
-    padding:0.8rem 1.5rem;
+    padding:0.8rem 2.5rem;
     outline-color:white;
     outline-width: 1px;
-    color: green;
+    color: lime;
 }
 
 #greenpaper-content{
@@ -390,6 +390,18 @@ img{
 
 /* Buy */
 
+.buy-title{
+    width: 100%;
+}
+
+
+#buy-heading{
+    color:lime!important;
+    padding:0.8rem 2.5rem !important;
+    font-size: 2rem !important;
+}
+
+
 .buy-header img{
     width:50%;
     border-radius: 50%;
@@ -405,6 +417,8 @@ img{
     z-index:890;
 
 }
+
+
 
 /* GreenexTokenomics */
 
@@ -510,14 +524,17 @@ img{
     padding:0.8rem 2.5rem;
     margin-bottom: 1rem;
     text-align: center;
+    color: lime;
+    border-color: white;
 }
 
 .tree-innerWrapper p{
     max-width: 600px;
     min-width:300px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding: 2rem;
     text-align: left;
+    line-height: 40px;
 
 }
 
@@ -683,14 +700,6 @@ footer{
 
     }
 
-
-
-
-    /* .footer-right .fab{
-        font-size: 25px!important;
-        padding-left:1px;
-    } */
-
 }
 
 @media screen and (min-width:1031px) and (max-width:1400px){
@@ -722,22 +731,10 @@ footer{
         /* flex-direction: column; */
     }
 
-    
-    /* .footer-right , .footer-left{
-        max-width: 100%;
-        text-align: center;
-    } */
-
-
-
     footer div h5, footer div p{
         font-size: 1rem;
     }
 
-    /* .fab{
-        font-size: 25px!important;
-        padding-left:1px;
-    } */
 }
 
 
@@ -795,6 +792,15 @@ footer{
     .marketplace button{
         font-size: 0.6rem!important;
     }
+
+    .tree-innerWrapper h1{
+        font-size: 1.5rem;
+    }
+
+    .tree-innerWrapper p{
+        font-size: 1.1rem;
+    }
+
 
     footer{
         padding: 0.5rem 1rem;
@@ -933,6 +939,14 @@ footer{
     .partner {
         min-width:80%;
         height: 180px;
+    }
+
+    .tree-innerWrapper h1{
+        font-size: 1.5rem;
+    }
+    
+    .tree-innerWrapper p{
+        font-size: 1.1rem;
     }
 
 
