@@ -16,6 +16,11 @@ body{
 
 }
 
+h1{
+    color: white;
+}
+
+
 i{
     color:white!important;
     margin:6px;
@@ -33,9 +38,9 @@ i{
     z-index:0!important;
 }
 
-h1{
-    color: white;
-}
+
+
+/* nav bar */
 
 .navbar{
     background-color:rgb(29, 26, 29)!important;
@@ -92,12 +97,58 @@ img{
 
 .hero-container a {
     text-decoration: none;
-    color:green;
-    background-color: white;
+    color:white;
+    background-color:green;
     padding:0.6rem 1.3rem;
     border-radius: 5px;
     font-weight: bolder;
 
+}
+
+
+.hero-container a:hover{
+    background-color: white;
+    color: green;
+}
+
+/* Back to top */
+
+.back-home{
+    width: 100%;
+    position: fixed;
+    font-size: 1.2rem;
+    bottom:50%;
+    background-color:rgb(41, 44, 41);
+    width:45px;
+    min-width:30px;
+    left:96%;
+    justify-content: center;
+    text-align:center;
+    padding:10px 1px;
+    z-index: 500;
+}
+
+.back-bottom{
+    width: 100%;
+    position: fixed;
+    font-size: 1.2rem;
+    top:50%;
+    background-color:rgb(41, 44, 41);
+    width:45px;
+    min-width:30px;
+    left:96%;
+    justify-content: center;
+    text-align:center;
+    padding:10px 1px;
+    z-index: 500;
+}
+
+
+
+
+
+.back:hover{
+    color:lime!important;
 }
 
 
