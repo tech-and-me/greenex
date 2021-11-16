@@ -143,11 +143,7 @@ img{
     z-index: 500;
 }
 
-
-
-
-
-.back:hover{
+.back-home:hover , .back-bottom:hover{
     color:lime!important;
 }
 
@@ -877,6 +873,10 @@ footer{
         padding-left:1px;
     }
 
+    .back-home , .back-bottom {
+        left:80%;
+    }
+
 }
 
 
@@ -1030,4 +1030,10 @@ footer{
         padding-right:0.5px;
         line-height: 60px;
     }
+
+    
+    .back-home , .back-bottom {
+        left:80%;
+    }
+
 }
