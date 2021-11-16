@@ -874,14 +874,10 @@ footer{
     }
 
     .back-home , .back-bottom {
-        left:88%;
+        left:91%;
     }
 
 }
-
-
-
-
 
 @media screen and (max-width: 780px){
     .hero-header, .hero-text{
@@ -1031,9 +1027,8 @@ footer{
         line-height: 60px;
     }
 
-    
     .back-home , .back-bottom {
-        left:88%;
+        left:91%;
     }
 
 }
