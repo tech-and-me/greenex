@@ -116,8 +116,9 @@ img{
 .roadmap-title{
     margin:2rem auto;
     outline-style: solid;
-    padding:0.8rem 1.5rem;
+    padding:0.8rem 3rem;
     outline-width: 1px;
+    /* outline-color: lime; */
 }
 
 .timeline-container{
@@ -399,6 +400,7 @@ img{
     color:lime!important;
     padding:0.8rem 2.5rem !important;
     font-size: 2rem !important;
+    
 }
 
 
@@ -529,19 +531,19 @@ img{
 }
 
 .tree-innerWrapper p{
-    max-width: 600px;
+    max-width: 650px;
     min-width:300px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding: 2rem;
-    text-align: left;
-    line-height: 40px;
+    text-align: center;
+    line-height: 50px;
 
 }
 
 .tree-innerWrapper img{
     width:100%;
-    max-width: 600px;
-    min-width:300px;
+    max-width: 1300px;
+    min-width:400px;
     border-radius: 30px;
     
 }
@@ -568,13 +570,15 @@ img{
     border: solid;
     border-color: white;
     border-width: 1px;
-    padding: 0.6rem 4rem;
-    font-size: 1.5rem;
+    padding: 0.6rem 5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
+    color:lime;
 }
 
 .token p{
     font-size: 1.1rem;
+ 
 }
 
 
@@ -909,6 +913,7 @@ footer{
 
     .buy-header div h1{
         font-size: 1.3rem!important;
+        
     }
 
 
