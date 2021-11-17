@@ -387,7 +387,7 @@ img{
     
 }
 
-.team-title h1, .inner-wrapper h1,  .buy-header div h1{
+.team-title h1,.buy-header div h1{
     font-size: 2.5rem !important;
     outline-width: 1px;
     outline-color: white;
@@ -415,6 +415,24 @@ img{
 
 }
 
+.inner-wrapper h1{
+    font-size: 2.5rem !important;
+    outline-width: 1px;
+    outline-color: white;
+    outline-style: solid;
+    width:70%;
+    max-width:350px;
+    padding:0.8rem 1.5rem !important;
+    position: ralative;
+    transform: translateX(-50%);
+    margin-left:50%;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
 .inner-wrapper img{
     text-align: center!important;
     align-items: center!important;
@@ -431,6 +449,7 @@ img{
     border-radius: 10px;
     transform: translateX(-50%);
     margin-left:50%;
+    
 }
 
 .partner img{
@@ -1028,8 +1047,8 @@ footer{
     .GreenexTokenomics div p{
         font-size: 1.2rem;
         text-align: justify;
-        padding-left:15px;
-        padding-right:15px;
+        padding-left:10px;
+        padding-right:10px;
     }
 
     .tokenomics-wrapper{
