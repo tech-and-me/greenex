@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     max-width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Play', sans-serif;
     text-justify: distribute;
 }
 
@@ -56,7 +55,6 @@ i{
     padding-left: 1rem !important;   
     transition: 300ms;
     transition: all 0.3s ease-in;
-    font-family: 'Roboto', sans-serif;
     text-align: cente;
 }
 
@@ -89,7 +87,6 @@ img{
 
 
 .hero-header{
-    /* font-family: 'Roboto', sans-serif; */
     position: relative;
     min-height: 300px;
     z-index:16;
@@ -97,7 +94,6 @@ img{
 
 .hero-header h1{
     font-size: 3rem;
-    font-family: 'IM Fell English SC', serif;
 }
 
 .hero-text p{
@@ -378,14 +374,9 @@ img{
 }
 
 .team-title{
-    /* font-size: 2.5rem !important;
-    outline-width: 2px;
-    outline-color: white;
-    outline-style: solid; */
     width:100%;
     align-content: center;
     text-align: center;
-    
 }
 
 .team-title h1,.buy-header div h1{
@@ -395,8 +386,6 @@ img{
     outline-style: solid;
     width:70%;
     max-width:350px;
-    /* max-width:300px;
-    max-width: 500px; */
     padding:0.8rem 1.5rem !important;
     position: ralative;
     transform: translateX(-50%);
@@ -410,10 +399,8 @@ img{
     width: 100%;
     margin-left: 50%;
     transform: translateX(-50%);
-    /* background-color: rgb(205, 235, 212); */
     background-image: url(../img/bg/bg1.jfif);
     padding: 2rem;
-
 }
 
 .inner-wrapper h1{
