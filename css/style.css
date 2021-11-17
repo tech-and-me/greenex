@@ -7,6 +7,7 @@
     box-sizing: border-box;
     max-width: 100%;
     font-family: 'Roboto', sans-serif;
+    text-justify: distribute;
 }
 
 body{
@@ -1047,6 +1048,7 @@ footer{
     .GreenexTokenomics div p{
         font-size: 1.2rem;
         text-align: justify;
+        text-justify: distribute;
         padding-left:10px;
         padding-right:10px;
     }
@@ -1070,7 +1072,7 @@ footer{
     }
     
     .tree-innerWrapper p{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
 
