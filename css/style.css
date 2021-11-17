@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     max-width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -13,7 +14,6 @@ body{
     color: whitesmoke;
     position:absolute;
     z-index: 900;
-
 }
 
 h1{
@@ -27,6 +27,11 @@ i{
 }
 
 
+.text-green{
+    color:lime !important;
+}
+
+
 #particles-js{
     width: 100%;
     height: 90vh;
@@ -34,7 +39,6 @@ i{
     left: 0;
     top: 10;
     bottom:200px!important;
-
     z-index:0!important;
 }
 
@@ -66,7 +70,6 @@ i{
     font-weight:300
 }
 
-
 img{
     width: 4%;
     min-width: 50px;
@@ -83,16 +86,28 @@ img{
     background-color:rgb(52, 146, 52);
 }
 
-.text-green{
-    color:lime !important;
-}
 
 .hero-header{
-    font-size: 3rem;
+    /* font-family: 'Roboto', sans-serif; */
     position: relative;
     min-height: 300px;
     z-index:16;
 } 
+
+.hero-header h1{
+    font-size: 3rem;
+    font-family: 'IM Fell English SC', serif;
+}
+
+.hero-text p{
+    font-size:1.3rem;
+}
+
+#token-address{
+    text-align: left;
+    font-size: 1.2rem;
+    color: greenyellow;
+}
 
 .hero-container a {
     text-decoration: none;
@@ -101,9 +116,7 @@ img{
     padding:0.6rem 1.3rem;
     border-radius: 5px;
     font-weight: bolder;
-
 }
-
 
 .hero-container a:hover{
     background-color: white;
@@ -154,7 +167,6 @@ img{
     max-width: 1000px;
     margin:2rem auto;
     position: relative;
-    /* background-color: red !important; */
     padding: 2rem;
 }
 
@@ -189,7 +201,6 @@ img{
 .timeline ul li{
     padding: 20px;
     background-color:rgb(34, 33, 33);
-    /* color: black; */
     margin-bottom: 20px;
     height: 11rem;
     border-radius: 10px;
@@ -248,8 +259,7 @@ img{
     margin:2rem;
     height: 80%;
     padding: 0.8rem 1.5rem;
-    line-height:40px ;
-    font-size: 1.2rem;
+    line-height:40px ; 
     outline-width: 1px;
     outline-color:black;
     outline-style: solid;
@@ -266,21 +276,16 @@ img{
     outline-color:white;
     outline-width: 1px;
     color: lime;
+    font-size:2.5rem;
 }
 
 #greenpaper-content{
-    /* top: 50%; */
-    /* align-items: center;
-    justify-content: center; */
+    font-size: 1.3rem;
     width: 100%;
     padding: 2rem;
-    /* opacity: 0.9; */
     color:white;
     margin-bottom: 2rem!important;
-    text-align:left;
-    /* text-justify: inter-character!important; */
-    
-
+    text-align:left;    
 }
 
 .greenpaper-container button a{
@@ -680,7 +685,14 @@ footer{
 /************************************* Media Query*************************************/
 
 @media screen and (min-width:768px){
+    #token-address{
+        font-size: 1.1rem;
+    }
 
+    .greenpaper-container div h1{
+        font-size: 2rem;
+    }
+   
     .timeline ul li{
         width: 50%;
         margin-bottom: 50px;
@@ -752,15 +764,33 @@ footer{
 
 @media screen and (min-width:1031px) and (max-width:1400px){
 
+    #greenpaper-content{
+        font-size: 1.2rem;
+    }
+
     .timeline ul li{
         height: 12rem;
     }
 
-    .GreenexTokenomics div p{
-        font-size: 1.5rem;
+    .wrapper p{
+        font-size: 0.9rem;
+        padding:1rem!important;
     }
 
+    .tokenomics-wrapper div{
+        flex-direction: column;
+    }
 
+    .GreenexTokenomics div p{
+        font-size: 1.15rem;
+        
+    }
+
+    .tokenomics-wrapper{
+        width:95%;
+    }
+
+    /* Marketpalce */
     .marketplace div{
         width:90%!important;
         padding: 1rem;
@@ -788,8 +818,21 @@ footer{
 
 
 @media screen and (min-width:768px) and (max-width:1030px){
+    .hero-header h1{
+        font-size: 2.5rem;
+    }
+
+    .hero-text p{
+        font-size: 1.1rem;
+        line-height: 35px;
+    }
+
     #greenpaper-content{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+    }
+
+    #token-address{
+        font-size: 1.1rem;
     }
 
     .tokenomics-wrapper div{
@@ -801,7 +844,10 @@ footer{
     }
 
     .GreenexTokenomics div p{
-        font-size: 1.5rem;
+        font-size: 1.15rem;
+        text-align: justify;
+        padding-left:30px;
+        padding-right:30px;
     }
 
     .buy-header button a {
@@ -882,18 +928,20 @@ footer{
     }
 
     .hero-header h1{
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 
     .hero-text p{
         font-size: 1.1rem;
+        line-height: 30px;
         padding-right:2rem;
+        text-align: justify;
+        padding-right:40px!important;
     }
 
-    .hero-text span{
-        font-size: 0.9rem;
+    #token-address{
+        font-size: 1rem;
     }
-
 
     /* Timeline */
     .timeline{
@@ -947,40 +995,48 @@ footer{
         margin:2rem 0;
     }
 
+
+    .greenpaper-container div h1{
+        font-size: 2rem!important;
+    }
+
     #greenpaper-content{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        text-align: justify;
+        padding-right:40px!important;
+        padding-left:40px!important;
     }
 
 
     /* Buy */
-
-
     .buy-header div h1{
         font-size: 1.3rem!important;
-        
     }
 
 
-
+    /* Tokenomics */
     .wrapper p{
         font-size: 0.9rem;
         padding:1rem!important;
     }
 
+    /* Tokenomics */
     .tokenomics-wrapper div{
         flex-direction: column;
     }
 
     .GreenexTokenomics div p{
-        font-size: 1.15rem;
-        
+        font-size: 1.2rem;
+        text-align: justify;
+        padding-left:20px;
+        padding-right:20px;
     }
 
     .tokenomics-wrapper{
         width:95%;
     }
 
-
+    /* Partner */
     .inner-wrapper h1{
         font-size: 1.6rem !important;
     }
