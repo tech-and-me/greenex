@@ -43,7 +43,6 @@ i{
 }
 
 
-
 /***************************nav bar *******************************/
 
 .navbar{
@@ -94,6 +93,7 @@ img{
 
 .hero-header h1{
     font-size: 3rem;
+    font-weight: bolder;
 }
 
 .hero-text p{
@@ -853,8 +853,10 @@ footer{
     .GreenexTokenomics div p{
         font-size: 1.15rem;
         text-align: justify;
+        word-break: break-all;
         padding-left:20px;
         padding-right:20px;
+
     }
 
     .buy-header button a {
@@ -943,6 +945,7 @@ footer{
         line-height: 30px;
         padding-right:2rem;
         text-align: justify;
+        word-break: break-all;
         padding-right:40px!important;
     }
 
@@ -1005,11 +1008,13 @@ footer{
 
     .greenpaper-container div h1{
         font-size: 2rem!important;
+        
     }
 
     #greenpaper-content{
         font-size: 1.1rem;
         text-align: justify;
+        word-break: break-all;
         padding-right:40px!important;
         padding-left:40px!important;
     }
@@ -1035,6 +1040,7 @@ footer{
     .GreenexTokenomics div p{
         font-size: 1.2rem;
         text-align: justify;
+        word-break: break-all;
         text-justify: distribute;
         padding-left:10px;
         padding-right:10px;
