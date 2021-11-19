@@ -853,7 +853,8 @@ footer{
     .GreenexTokenomics div p{
         font-size: 1.15rem;
         text-align: justify;
-        word-break: break-all;
+        text-justify: distribute;
+        word-spacing: -2px;
         padding-left:20px;
         padding-right:20px;
 
@@ -945,7 +946,7 @@ footer{
         line-height: 30px;
         padding-right:2rem;
         text-align: justify;
-        word-break: break-all;
+        word-spacing: -2px;
         padding-right:40px!important;
     }
 
@@ -1014,7 +1015,7 @@ footer{
     #greenpaper-content{
         font-size: 1.1rem;
         text-align: justify;
-        word-break: break-all;
+        word-spacing:-2px;
         padding-right:40px!important;
         padding-left:40px!important;
     }
@@ -1040,8 +1041,7 @@ footer{
     .GreenexTokenomics div p{
         font-size: 1.2rem;
         text-align: justify;
-        word-break: break-all;
-        text-justify: distribute;
+        word-spacing: -2px;
         padding-left:10px;
         padding-right:10px;
     }
